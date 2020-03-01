@@ -1,12 +1,10 @@
 <template>
-  <div class="hello">
+  <div id="header">
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
-
-
 export default {
   name: 'Header',
   props: {
@@ -29,6 +27,12 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #14041f;
+}
+
+#header {
+  background: url(../assets/headerplaceholder.png);
+  width: 100%;
+  height: auto;
 }
 </style>
