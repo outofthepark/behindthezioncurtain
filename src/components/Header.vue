@@ -1,22 +1,18 @@
 <template>
   <div id="header">
-    <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Header',
-  props: {
-    msg: String
-  },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
-  margin: 40px 0 0;
+  margin: 0px 0 0;
 }
 ul {
   list-style-type: none;
@@ -24,15 +20,15 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 0px;
 }
 a {
   color: #14041f;
 }
 
 #header {
-  background: url(../assets/headerplaceholder.png);
+  background: white;
   width: 100%;
-  height: auto;
+  height: 50px;
 }
 </style>
