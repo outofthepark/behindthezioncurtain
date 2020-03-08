@@ -1,10 +1,9 @@
 <template>
   <div id="homepage">
-    <p>This is the Home page!</p>
     <hooper :settings="hooperSettings" id="homeslider">
-    <slide id="sliderimage"><img src="@/assets/sliderimages/aprilgoldenshowers.png" /></slide>
-    <slide id="sliderimage"><img src="@/assets/sliderimages/fistsinthewind.png" /></slide>
-    <slide id="sliderimage"><img src="@/assets/sliderimages/burlesque.png" /></slide>
+    <slide class="sliderimage" :style="{backgroundImage: 'url('+require('@/assets/sliderimages/aprilgoldenshowers.png')+')'}"></slide>
+    <slide class="sliderimage" :style="{backgroundImage: 'url('+require('@/assets/sliderimages/burlesque.png')+')'}"></slide>
+    <slide class="sliderimage" :style="{backgroundImage: 'url('+require('@/assets/sliderimages/fistsinthewind.png')+')'}"></slide>
     <hooper-navigation slot="hooper-addons"></hooper-navigation>
   </hooper>
   </div>
@@ -53,7 +52,7 @@ import 'hooper/dist/hooper.css';
 
 <style>
 #homepage{
-  padding: 50px;
+  padding: 10px;
 }
 
 #homeslider{
@@ -61,8 +60,11 @@ import 'hooper/dist/hooper.css';
   height: auto;
 }
 
-#sliderimage{
-  width:1200px;
-  height: 666px;
+.sliderimage{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 666px
 }
 </style>
