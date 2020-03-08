@@ -27,8 +27,8 @@ a {
 }
 
 #header {
-  background: url('../assets/headerplaceholder.png');
+  background: white;
   width: 100%;
-  height: 300px;
+  height: 50px;
 }
 </style>
