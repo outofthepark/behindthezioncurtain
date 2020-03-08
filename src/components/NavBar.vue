@@ -1,13 +1,7 @@
 <template>
 <div>
-  <b-navbar id="mynavbar" toggleable="lg" type="dark" variant="dark">
-    <b-navbar-brand router-link to="/">{{ navtitle }}</b-navbar-brand>
-
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-    <b-collapse id="nav-collapse" is-nav>
-
-      <!-- Left aligned nav items -->
-      <b-navbar-nav >
+  <b-nav id="mynavbar" align="center" type="dark" variant="dark">
+        
         <b-nav-item router-link to="/rsvp">RSVP</b-nav-item>
       
 
@@ -23,17 +17,12 @@
             <b-dropdown-item href="https://bit.ly/btzc-mar6-cast" target="_blank">April Application</b-dropdown-item>
         </b-nav-item-dropdown>
 
-      </b-navbar-nav>
-
-      <b-navbar-nav class="ml-auto">
         <b-nav-item router-link to="/contact">Contact Us</b-nav-item>
 
         <a href="https://www.facebook.com/behindthezioncurtaincabaret" target="_blank"><img class="icon" src="@/assets/socialicons/fb.png" /></a>
         <a href="https://www.instagram.com/behindthezioncurtain/" target="_blank"><img class="icon" src="@/assets/socialicons/ig.png" /></a>
-      </b-navbar-nav>
 
-    </b-collapse>
-  </b-navbar>
+  </b-nav>
 </div>
 </template>
 
@@ -41,15 +30,21 @@
 export default {
   name: 'NavBar',
   props: {
-    navtitle: String,
-    //navigation: Object
   },
 }
 </script>
 
 <style scoped>
 #mynavbar{
-  background-color: black !important
+  background-color: black !important;
+  font-family: 'Lato', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  font-size: 22px;
+}
+
+.nav-item{
+  color: white !important
 }
 
 img.icon{
