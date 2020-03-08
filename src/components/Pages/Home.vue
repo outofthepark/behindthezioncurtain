@@ -1,12 +1,18 @@
 <template>
   <div id="homepage">
     <hooper :settings="hooperSettings" id="homeslider">
-    <slide class="sliderimage" :style="{backgroundImage: 'url('+require('@/assets/sliderimages/aprilgoldenshowers.png')+')'}"></slide>
-    <slide class="sliderimage" :style="{backgroundImage: 'url('+require('@/assets/sliderimages/burlesque.png')+')'}"></slide>
-    <slide class="sliderimage" :style="{backgroundImage: 'url('+require('@/assets/sliderimages/fistsinthewind.png')+')'}"></slide>
+      <slide class="sliderimage" :style="{backgroundImage: 'url('+require('@/assets/sliderimages/aprilgoldenshowers.png')+')'}"></slide>
+      <slide class="sliderimage" :style="{backgroundImage: 'url('+require('@/assets/sliderimages/burlesque.png')+')'}"></slide>
+      <slide class="sliderimage" :style="{backgroundImage: 'url('+require('@/assets/sliderimages/fistsinthewind.png')+')'}"></slide>
     <hooper-navigation slot="hooper-addons"></hooper-navigation>
-  </hooper>
-  <p>Text to see where hooper slide ends</p>
+    </hooper>
+    <div id="hooperdiv">
+      <p id="hoopertext">Come see our Next Show!
+        <br>April 1st: Fools and Follies
+        <br>$10 per person, doors at 7, show at 8
+      </p>
+      <a href="https://bit.ly/apr1/rsvp" target=_blank><b-button id="rsvpbutton">RSVP NOW!</b-button></a>
+    </div>
   </div>
 </template>
 
@@ -76,4 +82,41 @@ import 'hooper/dist/hooper.css';
   width: 100%;
   height: 600px;
 }
+
+#hooperdiv{
+   background-color: rgba(51,51,51,.5);
+   color: white;
+   font-family: 'Lato', sans-serif;
+   font-size: 19px;
+   text-transform: uppercase;
+   text-align:left;
+   position: relative;
+   padding-top: 25px;
+   padding-bottom: 20px;
+   padding-left: 150px;
+   padding-right: 40px;
+   bottom: 200px;
+   top: 50%
+}
+
+#rsvpbutton{
+  background-color: rgb(207,32,43);
+   border: none;
+   color: white;
+   font-family: 'Lato', sans-serif;
+   font-size: 22px;
+   text-transform: uppercase;
+  float: right;
+  position:relative;
+  bottom: 80px;
+  right:150px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#rsvpbutton:hover{
+  background-color: rgb(119, 17, 24);
+  border: none;
+}
+
 </style>

@@ -10,6 +10,7 @@
   <Header/>
 
   <!--Main Nav-->
+  <div id="mynavbardiv">
   <b-nav id="mynavbar" align="center" type="dark" variant="dark">
         
         <b-nav-item router-link to="/rsvp">RSVP</b-nav-item>
@@ -29,6 +30,7 @@
 
         <b-nav-item router-link to="/contact">Contact Us</b-nav-item>
   </b-nav>
+  </div>
 
 </div>
 </template>
@@ -55,26 +57,41 @@ export default {
   font-size: 22px;
 }
 
+#mynavbardiv{
+  background-color: rgb(51,51,51);
+  padding: 10px;
+}
+
 #mynavbar a {
-  color: white !important
+  color: white;
 }
 
 #mynavbar a:hover {
-  color: rgb(207,32,43)!important
+  color: rgb(207,32,43)
+}
+
+#mynavbar .router-link-exact-active.router-link-active{
+  color:rgb(207,32,43);
+}
+
+#mynavbar>li {
+  border-right: 1px solid #bbb;
+  line-height: .5;
 }
 
 .dropdown-menu{
   background-color: rgb(51,51,51) !important;
+  line-height: 1.5;
 }
 
 
 img.icon{
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   float: right;
   vertical-align: middle;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
 }
