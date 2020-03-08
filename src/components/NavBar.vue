@@ -1,6 +1,6 @@
 <template>
 <div>
-  <b-navbar toggleable="lg" type="dark" variant="dark">
+  <b-navbar id="mynavbar" toggleable="lg" type="dark" variant="dark">
     <b-navbar-brand router-link to="/">{{ navtitle }}</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -19,8 +19,8 @@
 
         <b-nav-item-dropdown text="Apply" left >
             <b-dropdown-item router-link to="/applicationinfo">Application Information</b-dropdown-item>
-            <b-dropdown-item ><a href="https://bit.ly/btzc-apr1-cast" target="_blank">April Application</a></b-dropdown-item>
-            <b-dropdown-item ><a href="https://bit.ly/btzc-may6-cast" target="_blank">May Application</a></b-dropdown-item>
+            <b-dropdown-item href="https://bit.ly/btzc-apr1-cast" target="_blank">April Application</b-dropdown-item>
+            <b-dropdown-item href="https://bit.ly/btzc-mar6-cast" target="_blank">April Application</b-dropdown-item>
         </b-nav-item-dropdown>
 
       </b-navbar-nav>
@@ -48,6 +48,10 @@ export default {
 </script>
 
 <style scoped>
+#mynavbar{
+  background-color: black !important
+}
+
 img.icon{
   width: 25px;
   height: 25px;
