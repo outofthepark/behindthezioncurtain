@@ -4,7 +4,7 @@ import Contact from './components/Pages/Contact'
 import FAQ from './components/Pages/FAQ'
 import Home from './components/Pages/Home'
 import Resources from './components/Pages/Resources'
-import Apply from './components/Pages/Apply'
+import ApplicationInfo from './components/Pages/ApplicationInfo'
 import RSVP from './components/Pages/RSVP'
 
 
@@ -28,9 +28,9 @@ export default new VueRouter({
         component: FAQ
     },
     {
-      path: '/apply',
-      name: 'Apply',
-      component: Apply
+      path: '/applicationinfo',
+      name: 'Application Information',
+      component: ApplicationInfo
     },
     {
       path: '/rsvp',

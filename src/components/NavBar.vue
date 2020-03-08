@@ -8,7 +8,6 @@
 
       <!-- Left aligned nav items -->
       <b-navbar-nav >
-        <b-nav-item router-link to="/apply">Apply!</b-nav-item>
         <b-nav-item router-link to="/rsvp">RSVP</b-nav-item>
       
 
@@ -16,6 +15,12 @@
             <b-dropdown-item router-link to="/faq">FAQ</b-dropdown-item>
             <b-dropdown-item router-link to="/communityresources">Community Resources</b-dropdown-item>
             <b-dropdown-item router-link to="/faq">Placeholder</b-dropdown-item>
+        </b-nav-item-dropdown>
+
+        <b-nav-item-dropdown text="Apply" left >
+            <b-dropdown-item router-link to="/applicationinfo">Application Information</b-dropdown-item>
+            <b-dropdown-item ><a href="https://bit.ly/btzc-apr1-cast" target="_blank">April Application</a></b-dropdown-item>
+            <b-dropdown-item ><a href="https://bit.ly/btzc-may6-cast" target="_blank">May Application</a></b-dropdown-item>
         </b-nav-item-dropdown>
 
       </b-navbar-nav>
