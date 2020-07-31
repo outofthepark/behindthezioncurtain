@@ -1,10 +1,8 @@
 <template>
 <div>
-    <NavBar navtitle="Behind the Zion Curtain Cabaret" 
-    />
+    <NavBar/>
     <router-view></router-view>
   </div>
-  
 </template>
 
 <script>
@@ -12,7 +10,7 @@ import NavBar from './components/NavBar.vue'
 
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     NavBar,
   }
@@ -20,5 +18,4 @@ export default {
 </script>
 
 <style>
-
 </style>
